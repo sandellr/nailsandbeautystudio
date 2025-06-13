@@ -13,31 +13,28 @@
       background-color: #fff;
     }
 
-    .embed-fullscreen {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .asp-embed-link, .asp-embed-link img {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      object-fit: cover;
     }
 
-    .asp-embed-link img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border: 0;
+    .asp-embed-link {
+      position: relative;
+      overflow: hidden;
     }
   </style>
 </head>
 <body>
-  <div class="embed-fullscreen">
-    <script id="asp-embed-script" data-zindex="1000000" type="module" charset="utf-8"
-            src="https://new.express.adobe.com/webpage/static/embed/embed.js"></script>
-    <a class="asp-embed-link" href="https://new.express.adobe.com/webpage/3rPcIdtBqgnK0/" target="_blank">
-      <img src="https://new.express.adobe.com/webpage/3rPcIdtBqgnK0/resources?asset_id=rendition&buster=1749802363501"
-           alt="A.S. Studio - nailsandbeautystudio.com" />
-    </a>
-  </div>
+  <script id="asp-embed-script" data-zindex="1000000" type="module" charset="utf-8"
+          src="https://new.express.adobe.com/webpage/static/embed/embed.js"></script>
+  <a class="asp-embed-link" href="https://new.express.adobe.com/webpage/3rPcIdtBqgnK0/" target="_blank">
+    <img src="https://new.express.adobe.com/webpage/3rPcIdtBqgnK0/resources?asset_id=rendition&buster=1749802363501"
+         alt="A.S. Studio - nailsandbeautystudio.com" />
+  </a>
 </body>
 </html>
